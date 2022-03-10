@@ -1,0 +1,14 @@
+@import "helper/variables";
+
+.landing_body {
+	background-color: $backcolor;
+	.logo_image {
+		margin-left: 10vw;
+		margin-top: 4vw;
+	}
+	.main_header {
+		font-size: 50px;
+		margin-left: 10vw;
+		margin-top: 10vw;
+	}
+}
