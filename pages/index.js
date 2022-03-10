@@ -21,6 +21,10 @@ export default function Home() {
 						<br />
 						camp on Earth.
 					</h1>
+					<p className={styles.text_subtitle}>
+						lorem Ipsum has been the industry's standard dummy text ever since
+						the 1500s, when an unknown printer
+					</p>
 				</main>
 			</body>
 		</div>

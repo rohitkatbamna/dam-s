@@ -1,14 +1,25 @@
 @import "helper/variables";
-
-.landing_body {
+.container {
 	background-color: $backcolor;
-	.logo_image {
-		margin-left: 10vw;
-		margin-top: 4vw;
-	}
-	.main_header {
-		font-size: 50px;
-		margin-left: 10vw;
-		margin-top: 10vw;
+	width: auto;
+	grid-template-columns: 50% 50%;
+	.landing_body {
+		display: grid;
+
+		.logo_image {
+			margin-left: 10vw;
+			margin-top: 4vw;
+		}
+		.main_header {
+			font-size: 50px;
+			margin-left: 10vw;
+			margin-top: 10vw;
+		}
+		.text_subtitle {
+			margin-left: 10vw;
+			margin-top: 3vw;
+			color: $textcolor;
+			font-size: 20px;
+		}
 	}
 }
