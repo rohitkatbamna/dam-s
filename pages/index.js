@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import logo from "../public/Assets/Logo.svg";
-
+import imageone from "../public/Assets/Hero Image.jpg";
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -27,6 +27,7 @@ export default function Home() {
 					</p>
 				</main>
 			</body>
+			<Image src={imageone} alt="Main Image" />
 		</div>
 	);
 }
