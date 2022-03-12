@@ -7,7 +7,7 @@ import checkboximage from "../public/Assets/Checkmark.svg";
 import airbnbimage from "../public/Assets/Airbnb.svg";
 import bookingimage from "../public/Assets/Booking.svg";
 import plumguide from "../public/Assets/Plum Guide.svg";
-
+import imagetwo from "../public/Assets/Hero Image (Tablet and Mobile).jpg";
 export default function Home() {
 	return (
 		<div className={styles.container}>
@@ -20,6 +20,9 @@ export default function Home() {
 				<header className={styles.logo_image}>
 					<Image src={logo} alt="Main Logo" />
 				</header>
+				<div className={styles.main_imagemobile}>
+					<Image src={imagetwo} alt="main image" />
+				</div>
 				<main>
 					<h1 className={styles.main_header}>
 						Explore the best
@@ -47,14 +50,18 @@ export default function Home() {
 					<div className={styles.pat_with_part}>
 						<h6>Partnered With:</h6>
 						<div>
-							<Image src={airbnbimage} layout="fixed" alt="airbnb" />
-							<Image src={bookingimage} layout="fixed" alt="booking.com" />
-							<Image src={plumguide} layout="fixed" alt="plum guide" />
+							<Image src={airbnbimage} alt="airbnb" />
+							<Image src={bookingimage} alt="booking.com" />
+							<Image src={plumguide} alt="plum guide" />
 						</div>
 					</div>
 				</main>
 			</body>
-			<Image src={imageone} alt="Main Image" />
+			<Image
+				src={imageone}
+				alt="Main Image"
+				className={styles.main_landingimage}
+			/>
 		</div>
 	);
 }
