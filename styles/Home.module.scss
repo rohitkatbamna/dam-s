@@ -21,11 +21,27 @@
 			color: $textcolor;
 			font-size: 20px;
 		}
+		.check_box {
+			margin-left: 10vw;
+			.check_box_line {
+				display: flex;
+				align-content: center;
+				align-items: center;
+				font-size: 20px;
+				line-height: 20px;
+			}
+			.check_box_text {
+				margin-left: 5px;
+			}
+		}
+		.pat_with_part {
+			margin-left: 10vw;
+		}
 	}
 }
 @media only screen and (max-width: 900px) {
 	.container {
-		grid-template-columns: 100%;
+		grid-template-columns: 1fr;
 		grid-template-rows: 50% 50%;
 	}
 }
